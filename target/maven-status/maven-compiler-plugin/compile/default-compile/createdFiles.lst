@@ -1,0 +1,5 @@
+com\heroku\web\entity\Skill.class
+com\heroku\web\servlet\DefaultServlet.class
+com\heroku\web\dao\impl\SkillDAOImpl.class
+com\heroku\web\dao\SkillDAO.class
+com\heroku\web\Program.class
