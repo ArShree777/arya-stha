@@ -16,7 +16,7 @@ import javax.servlet.http.*;
  *
  * @author aryas
  */
-@WebServlet(name="default",urlPatterns = "/")
+@WebServlet(name="default",urlPatterns = "/home")
 public class DefaultServlet extends HttpServlet {
     private SkillDAO skillDAO=new SkillDAOImpl();
     @Override
