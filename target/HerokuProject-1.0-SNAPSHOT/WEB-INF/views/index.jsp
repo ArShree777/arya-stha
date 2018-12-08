@@ -14,7 +14,7 @@
     </head>
     <body>
         <h1>Skills</h1>
-        <c:forEach var="skill" items="${requestScope.skill}">
+        <c:forEach var="skill" items="${requestScope.skills}">
             <h2>${skill.name}</h2>
     </c:forEach>
     </body>

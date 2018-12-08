@@ -11,6 +11,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,8 +45,8 @@ public class SkillDAOImpl implements SkillDAO {
             }
 
             conn.close();
-return skills;
-        } catch (Exception ex) {
+            return skills;
+        } catch (ClassNotFoundException | SQLException ex) {
             System.out.println(ex.getMessage());
         }
         return null;
