@@ -46,7 +46,7 @@ public class SkillDAOImpl implements SkillDAO {
 
             conn.close();
             return skills;
-        } catch (ClassNotFoundException | SQLException ex) {
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
         return null;
