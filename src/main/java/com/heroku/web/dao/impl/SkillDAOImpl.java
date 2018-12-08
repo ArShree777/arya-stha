@@ -23,7 +23,7 @@ public class SkillDAOImpl implements SkillDAO {
 
     @Override
     public List<Skill> getAll() {
-        List<Skill> skills = new ArrayList<>();
+        List<Skill> skills = new ArrayList<Skill>();
         try {
             Class.forName("org.postgresql.Driver");
             String url = "jdbc:postgresql://ec2-54-243-150-10.compute-1.amazonaws.com/d5t4o9s8al8sif?sslmode=require";
